@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Styles */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: "Open Sans", sans-serif, serif;
+}
+
+#nhap-btn {
+    background-color: #4970a3;
+    border-radius: 10px;
+    border: none;
+}
+
+#update-btn {
+    background-color: rgb(255, 115, 0);
+    border-radius: 10px;
+    border: none;
+}
+
+#nhap-btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+#update-btn:hover {
+    color: white;
+    background-color: orange;
+}
+
+#my-table thead th {
+    cursor: pointer;
+}
+
+.button {
+    text-align: center;
+}
+
+.edit-btn {
+    background-color: green;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+.diem-btn {
+    background-color: #4970a3;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+}
+
+.diem-btn:hover {
+    background-color: lightseagreen;
+    color: white;
+}
+
+#hoc-sinh-gioi {
+    background-color: orangered;
+}
+
+#hoc-sinh-gioi:hover {
+    background-color: orange;
+}
+
+/** moble **/
+@media screen and (max-width: 767px) {
+
+    /** input **/
+    .main{
+        border: 1px solid #4970a3;
+        border-radius: 5px;
+        width: 98%;
+        height: 320px;
+        margin: 0px auto;
+    }
+    .top{
+        background-color: #4970a3;
+        width: 100%;
+        height: 50px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 0px;
+    }
+    .main form {
+            width: 100%;
+            padding: 0px auto;
+    }
+    .main form ul li{
+        padding: 15px 40px 20px 40px;
+        list-style-type: none;
+        height: 20px;
+        font-size: 14px;
+    }
+    .main form ul .label{
+        width: 100%;
+        height: 15px;
+        text-align: center;
+    }
+    .main form ul input{
+        width:100%;
+        height: 15px;
+    }
+    #nhap-btn, #update-btn {
+        margin-top: 80px;
+        text-align: center;
+        height: 30px;
+        width: 80px;
+    }
+
+    /** table **/
+    .showdata {
+        margin-top: 100px;
+    }
+    .showdata #my-table {
+        margin: 0px auto;
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
+    .showdata #my-table caption {
+        background-color: #4970a3;
+        color: white;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+    }
+    /* show thong tin loi*/
+    .diem-btn {
+        width: 100px;
+        font-size: 12px;
+        margin-top: 20px;
+        height: 30px;
+    }
+    #ho-ten-error {
+        color: red;
+        font-size: 12px;
+        display: block;
+    }
+
+    #diem-toan-error {
+        color: red;
+        font-size: 12px;
+        display: block;
+        
+    }
+    #diem-ly-error {
+        color: red;
+        font-size: 12px;
+        display: block;
+    }
+    #diem-hoa-error {
+        color: red;
+        font-size: 12px;
+        display: block;
+        
+    }
+}
+
+/** laptop **/
+@media screen and (min-width: 768px){
+
+    /** form input **/
+    .main{
+        border: 1px solid #4970a3;
+        border-radius: 5px;
+        width: 600px;
+        height: 350px;
+        margin: 50px auto;
+    }
+    .top{
+        background-color: #4970a3;
+        width: 100%;
+        height: 50px;
+        color: white;
+        margin-top: 0px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .main form {
+            width: 100%;
+            padding: 0 auto;
+    }
+    .main form ul li{
+        padding: 20px 20px 20px 0px;
+        list-style-type: none;
+        height: 20px;
+        font-size: 20px;
+    }
+    .main form ul .label{
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 20px;
+        display: inline-block;
+        width: 20%;
+    }
+    .main form ul input{
+        height: 30px;
+        width: 60%;
+    }
+
+    #nhap-btn, #update-btn {
+        margin-top: 85px;
+        text-align: center;
+        height: 30px;
+        width: 80px;
+    }
+    /* table */
+    .showdata {
+        margin-top: 80px;
+    }
+    .showdata #my-table {
+        margin: 0px auto;
+        width: 900px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .showdata #my-table caption {
+        background-color: #4970a3;
+        color: white;
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .showdata #my-table tr {
+        height: 30px;
+    }
+
+    .diem-btn {
+        width: 150px;
+        margin-top: 30px;
+        height: 30px;
+    }
+    /* show thon tin loi*/
+    #ho-ten-error {
+        color: red;
+        font-size: 14px;
+        display: block;
+        padding-left: 180px;
+    }
+
+    #diem-toan-error {
+        color: red;
+        font-size: 14px;
+        display: block;
+        padding-left: 180px;
+        
+    }
+    #diem-ly-error {
+        color: red;
+        font-size: 14px;
+        display: block;
+        padding-left: 180px;
+    }
+    #diem-hoa-error {
+        color: red;
+        font-size: 14px;
+        display: block;
+        padding-left: 180px;
+        
+    }
+}

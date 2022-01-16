@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   	<meta charset="UTF-8">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- thu vien jQuery va validation plugin -->
+   	<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+   		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+	<script type="text/javascript" src="./jQuery.js"></script>
+   	<link rel="stylesheet" href="style.css">
+	<title>Assignment 3</title>
+</head>
+<body>
+	<!-- form nhap thong tin -->
+	<section class="main">
+		<h2 class="top">Class Marksheet</h2>
+		<!-- form-->
+		<form id="form">
+			<ul>
+                <li class="row">
+					<label class="label" for="ho-ten">Họ tên</label>
+					<input id="ho-ten" type="text" name="name" value="" placeholder="Nhập họ và tên">
+                </li>
+                <li class="row">
+					<label class="label" for="diem-toan">Điểm toán</label>
+					<input id="diem-toan" type="text" name="toan" value="" placeholder="Nhập điểm môn toán">
+                </li>
+                <li class="row">
+					<label for="diem-ly" class="label">Điểm lý</label>
+					<input id="diem-ly" type="text"name="ly" value="" placeholder="Nhập điểm môn lý">
+                </li>
+                <li class="row">
+					<label class="label" for="diem-hoa">Điểm hóa</label>
+					<input id="diem-hoa" type="text" name="hoa" value="" placeholder="Nhập điểm môn hóa">
+                </li>
+            </ul>
+		</form>
+		<div class="button">
+			<button id="nhap-btn" type="submit" value="submit">Nhập</button>
+			<button id="update-btn">Cập Nhật</button>
+		</div>
+	</section>
+
+	<!-- bang hien thị thong tin -->
+	<section class="showdata">
+		<table id="my-table" border="1" cellspacing='0' cellpadding="5">
+			<caption>Marksheet</caption>
+			<colgroup>
+				<col width="40" span="1">
+				<col width="200" span="1">
+				<col width="100" span="4">
+				<col width="70" span="2">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>STT</th>
+					<th>Họ tên</th>
+					<th>Toán</th>
+					<th>Lý</th>
+					<th>Hóa</th>
+					<th>Trung bình</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody id="bodytable">
+			</tbody>
+		</table>
+		<!-- button -->
+		<div class="button">
+			<button class="diem-btn" id="avg">Điểm Trung Bình</button>
+			<button class="diem-btn" id="hoc-sinh-gioi">Học Sinh Giỏi</button>
+		</div>
+	</section>
+	</body>
+</html>
